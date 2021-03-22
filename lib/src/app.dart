@@ -1,5 +1,6 @@
 import 'package:calculo_de_parcelas/src/pages/mobile/main/main_page.dart';
 import 'package:calculo_de_parcelas/src/pages/web/main/web_main_page.dart';
+import 'package:calculo_de_parcelas/src/presentation/pages/main/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
@@ -20,7 +21,7 @@ class App extends StatelessWidget {
 
   Widget selectPlatformHome(){
     if (kIsWeb) {
-      return WebMainPage();
+      return MainPage();
     } else {
       return MobileMainPage();
     }
